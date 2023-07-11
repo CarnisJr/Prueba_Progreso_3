@@ -42,6 +42,7 @@ int main (void){
     {
         printf("Ingresa el usuario: ");
         scanf("%s", usuario);
+        printf("%s", usuario);
         printf("Ingresa la contrasenia: ");
         scanf("%s", contrasenia);
 
