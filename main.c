@@ -41,13 +41,11 @@ int main (void){
        do
     {
         printf("Ingresa el usuario: ");
-        scanf("%s", usuario);
-        printf("%s", usuario);
+        scanf("%s", &usuario);
         printf("Ingresa la contrasenia: ");
-        scanf("%s", contrasenia);
+        scanf("%s", &contrasenia);
 
-        if(strcmp(usuario, usuario1) != 0 || strcmp(usuario2, usuario) != 0 || strcmp(contrasenia, contrasenia1) != 0 
-            || strcmp(usuario3, usuario) != 0 || strcmp(contrasenia2, contrasenia) != 0 || strcmp(contrasenia3, contrasenia) != 0){
+        if(strcmp(usuario, usuario1) != 0 || strcmp(contrasenia1, contrasenia) != 0){
             errores++;
             flag = 1;
             printf("Usuario o contrasenia incorrectos, intento #%d\n", errores);
@@ -57,6 +55,7 @@ int main (void){
                 exit(1);
             }
         }else{
+
             flag = 0;
         }
 
